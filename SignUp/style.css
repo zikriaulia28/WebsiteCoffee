@@ -1,0 +1,259 @@
+:root {
+  --color-primary: #FFBA33;
+  --color-secondary: #6A4029;
+  --background-primary: #F8F8F8;
+  --background-secondary: #FFFFFF;
+  --color-border: #4F5665;
+  --padding-topbottom: 50px;
+  --padding-leftright: 40px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Rubik:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+}
+
+.container-signup {
+  position: relative;
+  display: flex;
+  max-width: 1440px;
+  height: 1100px;
+}
+
+.container-signup .background {
+  position: relative;
+  flex: 1;
+}
+
+.background img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.signup {
+  height: 150vh;
+  flex: 1;
+}
+
+.header-signup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-topbottom) var(--padding-leftright);
+}
+
+.header-signup .logo-icon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-signup .btn-login {
+  width: 150px;
+  height: 45px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--color-primary);
+  border-radius: 50px;
+  color: var(--color-secondary);
+}
+
+.header-signup .title-txt {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.title-signup {
+  margin-bottom: 59px;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-secondary);
+}
+
+.header-signup .logo-icon img {
+  width: 30px;
+  height: 33px;
+}
+
+.form-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-signup .input-form {
+  width: 505px;
+  margin-bottom: 32px;
+  font-size: 20px;
+}
+
+.input-form input {
+  width: 505px;
+  height: 75px;
+  margin-top: 13px;
+  padding: 25px 30px;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  font-size: 20px;
+}
+
+.input-form p {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.btn {
+  width: 505px;
+  height: 75px;
+  margin-bottom: 26px;
+  border-radius: 20px;
+  border: none;
+}
+
+.btn-signup {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.btn-google {
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-google img {
+  width: 27px;
+  height: 28px;
+}
+
+.card-member {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 233px;
+  background-color: var(--background-secondary);
+  border-radius: 10px;
+  left: 100px;
+  top: 978.22px;
+  padding: 59px 70px;
+  box-shadow: 0 0 57px 0 rgba(0, 0, 0, 0.06);
+  z-index: 1;
+}
+
+.card-member .btn-create {
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: var(--color-primary);
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.card-title {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.card-desc {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 176px 151px;
+  background-color: var(--background-primary);
+}
+
+.footer-desc .footer-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+  gap: 15px;
+}
+
+.footer-desc .desc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.footer-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-icon img {
+  width: 30px;
+  height: 33px;
+}
+
+.footer-desc .copyright {
+  font-size: 16px;
+  font-weight: 400;
+  color: #AFB5C0;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 127px;
+}
+
+.footer-menu .product h2,
+.footer-menu .engage h2 {
+  margin-bottom: 20px;
+}
+
+.product .product-list,
+.engage .engage-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-media ul {
+  display: flex;
+  gap: 20px;
+}
+
+.social-media ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  background-color: var(--color-primary);
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram {
+  color: var(--color-secondary);
+}
+
+.pointer {
+  cursor: pointer;
+}
