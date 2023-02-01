@@ -1,0 +1,457 @@
+:root {
+  --color-primary: #FFBA33;
+  --color-secondary: #6A4029;
+  --color-font: #4F5665;
+  --background-primary: #F8F8F8;
+  --background-secondary: #FFFFFF;
+  --color-line: #9F9F9F;
+  --shadow: #BCBABA;
+  --font-primary: 'Rubik', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@400;700;900&family=Rubik:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  max-width: 1482px;
+}
+
+.pointer {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: var(--background-primary);
+  border-bottom: 0.5px solid var(--color-line);
+}
+
+header>* {
+  font-family: var(--font-primary);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 174px;
+}
+
+nav .menu {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  width: 33px;
+  height: 33px;
+}
+
+.logo h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+nav .menu-list ul {
+  display: flex;
+  gap: 40px;
+}
+
+nav .menu-list ul li {
+  font-size: 14px;
+}
+
+nav .menu-list .active {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+nav .menu-profile ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav .menu-profile ul .search {
+  background-color: var(--background-secondary);
+}
+
+nav .profile ul {
+  display: flex;
+  gap: 32px;
+}
+
+.container-profile {
+  background-image: url(https://s3-alpha-sig.figma.com/img/9e15/a72e/b94b169a2b3bf7010f10c4fce8c1d0a1?Expires=1676246400&Signature=MSUGjQqiX0xv0zwiG1U17OjjxDgbluQwUD74lcbZNbuDeU-WoQBWp9qwk4Djl1gY62KEzuoIWXYjYERUBNjGMOHsz02D9POzMjn64J78~Pwyp6SPO8OQn7iPYBOSmNz8NU6n9mDge65O-kd26klUbt91b7nHB~7ytisZyG4TrmLI1E4GqIJgbUHzX1Q6qjMbTOgAo6VBHOi4J5o4p5viJ9v4i8g3-f~5l2AZX~2sEDRBge6iJz7OAcCPTTJcZ90CBaUr4uFNvThNYS6-kIyfhIihDsbY-ztB2j1kshLNNXWIIgVL1mqFWTEMoZjbrVEibr~xTbIqZYuIV4LNbCJTWg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 60px 173px;
+}
+
+/* .container-profile .profile-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr;
+  grid-template-areas:
+    "card-user form-contact form-contact"
+    "form-details form-details btn";
+  gap: 10px;
+} */
+
+.container-profile .profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 52px;
+}
+
+.container-profile .title h1 {
+  color: var(--background-secondary);
+}
+
+.profile-wrapper .profile-top {
+  display: flex;
+  gap: 23px;
+}
+
+.profile-wrapper .profile-bottom {
+  display: flex;
+  gap: 23px;
+}
+
+.profile-wrapper .card-user {
+  flex: 1;
+  border-radius: 10px;
+  background-color: var(--background-secondary);
+  padding: 50px 0px;
+  font-family: var(--font-primary);
+}
+
+.card-user .profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.card-user .profile-card .img {
+  background-image: url(https://s3-alpha-sig.figma.com/img/0ccd/b210/685819c7ff9c7e2cbb23e6190ab4ef92?Expires=1676246400&Signature=G3TSvLJVZR31jqMQJAyab2ca~a0KKnOzu~ZWCl0tUtm51R1BE-Ysz-RUf5Afd9gMgUlPDTTAZTwTWrOw22RN53LKn8n6dkG~9kB6ohF8-iQpYfxP9yrti3o8bYEcASO8fHsIQOoYRlLUf9-qU8Ypj4tfhKCwoIDqlWSTPXHJqDGR7yd0ucXvYoOHk-BRNZ1UnfyE5m0-9MP9N~BA6BDwwcXOr6aNZX-EX1d5wsWo7qxdsI6PVoKuZQt7Oq5Ar-wieYnnMJcACfUKSNSbik2szp~jIJdiNFMxQaUkz-51xwBkX5q7XnmKPzWtqcAQJepMsktk0GBRA~0LK9NgjyuT-Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right 0px top 0px;
+}
+
+.img .icon {
+  position: relative;
+  top: 80px;
+  left: 100px;
+  width: 40px;
+  height: 40px;
+}
+
+.card-user .profile-card .name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card-user .profile-card .txt {
+  text-align: center;
+}
+
+.card-user .profile-card .desc {
+  font-size: 15px;
+  color: var(--color-font);
+}
+
+.profile-wrapper .form-contact {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding: 17px 30px;
+  background-color: var(--background-secondary);
+  border-radius: 10px;
+  font-family: var(--font-secondary);
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-header .title {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--color-font);
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+}
+
+.forms {
+  display: flex;
+  gap: 36px;
+  margin-bottom: 40px;
+}
+
+.input-form input {
+  width: 300px;
+  height: 36px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+
+.input-form .title {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-line);
+}
+
+.profile-bottom .form-details {
+  flex: 2;
+  background-color: var(--background-secondary);
+  border-radius: 10px;
+  padding: 17px 25px;
+}
+
+.profile-bottom .btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  border-radius: 10px;
+}
+
+.gender {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.btn-group>*,
+.btn>* {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.btn-group .title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.btn-group .title,
+.save {
+  color: var(--background-secondary);
+}
+
+.cancle,
+.edit,
+.logout {
+  color: var(--color-secondary);
+}
+
+.save {
+  background-color: var(--color-secondary);
+}
+
+.cancle {
+  background-color: var(--color-primary);
+}
+
+.edit,
+.logout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 24px;
+  background-color: var(--color-line);
+}
+
+.btn button {
+  width: 300px;
+  height: 60px;
+  border-radius: 20px;
+  border: none;
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 151px;
+  background-color: var(--background-primary);
+}
+
+.footer-desc .footer-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+  gap: 15px;
+}
+
+.footer-desc .desc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.footer-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-icon img {
+  width: 30px;
+  height: 33px;
+}
+
+.footer-desc .copyright {
+  font-size: 16px;
+  font-weight: 400;
+  color: #AFB5C0;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 127px;
+}
+
+.footer-menu .product h2,
+.footer-menu .engage h2 {
+  margin-bottom: 20px;
+}
+
+.footer-menu>.product>.product-list,
+.engage .engage-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-media ul {
+  display: flex;
+  gap: 20px;
+}
+
+.social-media ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  background-color: var(--color-primary);
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram {
+  color: var(--color-secondary);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  nav {
+    padding: 0px 50px;
+  }
+
+  nav .menu-list,
+  nav .profile {
+    display: none;
+  }
+
+  nav .menu {
+    display: inline;
+  }
+
+  .profile-wrapper .profile-top,
+  .profile-wrapper .profile-bottom {
+    flex-direction: column;
+  }
+
+  .container-profile {
+    padding: 60px 100px;
+    height: auto;
+  }
+
+  .input-form input {
+    width: 230px;
+  }
+
+  .container-profile .profile-wrapper {
+    gap: 20px;
+  }
+
+  .profile-bottom .btn {
+    flex-direction: row;
+  }
+
+  .btn button {
+    width: 50%;
+  }
+
+  .btn>* {
+    font-size: 15px;
+  }
+
+  .edit img,
+  .logout img {
+    display: none;
+  }
+
+  .logout {
+    display: inline;
+  }
+
+  footer {
+    padding: 50px 100px;
+  }
+
+  .footer-menu {
+    gap: 30px;
+  }
+
+  .footer-desc .footer-icon {
+    margin-bottom: 0px;
+  }
+
+}

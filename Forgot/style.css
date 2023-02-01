@@ -17,6 +17,10 @@
   font-family: 'Rubik', sans-serif;
 }
 
+body {
+  max-width: 1440px;
+}
+
 .container-logot {
   display: flex;
   flex-direction: column;
@@ -24,7 +28,6 @@
   background-image: url(https://s3-alpha-sig.figma.com/img/245d/3c2d/d9b99b0f8bb8ff1c5992ab8bd7684491?Expires=1675641600&Signature=NqrBypmm4iPv9E4Wbt7V5AvuTsIIok-rRAPvO2SjYvJCe8GJ8LFZ92TfcEWIHLuXAMFiCGZodJlmjThAFm9wOfaewDRsCIA~QK0iKnnfKacBlgfHEeeJCYqMqWHjkykub9NJrP5OPkPbHZY7uxrj0TjRN8-K1T20HH~3g7W1sHbGxXdMA9h0UvhLrypZh0qXHpWkBQ6uBCgQGh5g7nqd7fK3JUTZHmJHsOpQt33h6z2AsMlNpAsaco0Y~MlmgGC1nTYi3o6LUb1yb04DDhhw2M374qoPHzcxQEjsW81kMU145OQqH5Q1q-~Z6NnOtLP1WRBsllLqPUYxoJS4S72Wzw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
   height: 100vh;
   padding: 220px 150px;
 }
@@ -118,7 +121,7 @@
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 176px 151px;
+  padding: 100px 151px;
   background-color: var(--background-primary);
 }
 
@@ -192,4 +195,64 @@ footer {
 
 .pointer {
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container-logot {
+    height: fit-content;
+    padding: 50px 100px;
+  }
+
+  .forgot-title {
+    font-size: 32px;
+  }
+
+  .forgot-desc {
+    font-size: 15px;
+  }
+
+  .form-email {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .form-email input {
+    width: 60%;
+    height: 20px;
+    padding: 20px;
+  }
+
+  .btn-send {
+    width: 30%;
+    height: 50px;
+  }
+
+  .form-email input,
+  .btn-send,
+  .btn-resend {
+    font-size: 20px;
+  }
+
+  .resend .resend-txt,
+  .resend .resend-time {
+    font-size: 20px;
+  }
+
+  .btn-resend {
+    width: 60%;
+    height: 60px;
+  }
+
+  footer {
+    padding: 50px 100px;
+  }
+
+  .footer-menu {
+    gap: 30px;
+  }
+
+  .footer-desc .footer-icon {
+    margin-bottom: 0px;
+  }
 }
