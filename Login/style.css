@@ -23,27 +23,24 @@ body {
   max-width: 1440px;
 }
 
-.container-login {
-  position: relative;
-  display: flex;
-  height: 1100px;
+a {
+  color: #000000;
 }
 
-.container-login .background {
-  position: relative;
+.login-wrapper {
+  display: flex;
+}
+
+
+.container-login .background,
+.login {
   flex: 1;
 }
 
 .background img {
   width: 100%;
-  height: 100%;
   background-repeat: no-repeat;
-  position: absolute;
-}
-
-.login {
-  height: 150vh;
-  flex: 1;
+  object-fit: cover;
 }
 
 .header-login {
@@ -148,20 +145,21 @@ body {
   height: 28px;
 }
 
+.card {
+  padding: 0px 100px;
+}
+
 .card-member {
-  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1140px;
-  height: 233px;
   background-color: var(--background-secondary);
   border-radius: 10px;
-  left: 100px;
-  top: 978.22px;
   padding: 59px 70px;
   box-shadow: 0 0 57px 0 rgba(0, 0, 0, 0.06);
-  z-index: 1;
+  position: absolute;
+  transform: translate(0%, -50%);
+  width: 1140px;
 }
 
 .card-member .btn-create {
@@ -270,6 +268,22 @@ footer {
     justify-content: center;
   }
 
+  .login-wrapper {
+    justify-content: center;
+  }
+
+  .header-login {
+    padding: 80px 0px;
+  }
+
+  .header-login .logo-icon img {
+    background-color: #0000005c;
+  }
+
+  .header-login .logo-icon img {
+    background-color: #0000005c;
+  }
+
   .login {
     position: absolute;
     z-index: 1;
@@ -286,8 +300,7 @@ footer {
   .card-member {
     width: 80%;
     height: 10%;
-    left: 70px;
-    top: 924px;
+    transform: translate(-3%, -50%);
   }
 
   .card-title {
@@ -298,8 +311,12 @@ footer {
     font-size: 12px;
   }
 
+  .card-member .btn-create {
+    width: 30%;
+  }
+
   footer {
-    padding: 50px 100px;
+    padding: 100px 80px;
   }
 
   .footer-menu {
@@ -308,5 +325,90 @@ footer {
 
   .footer-desc .footer-icon {
     margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 428px) {
+  .login {
+    width: 100%;
+  }
+
+  .header-login {
+    padding: 10px 0px;
+  }
+
+  .title-login {
+    margin-bottom: 30px;
+  }
+
+  .header-login .title-txt,
+  .title-login,
+  .input-form p {
+    font-size: 16px;
+  }
+
+  .header-login .btn-login {
+    width: 25%;
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .form-login .input-form {
+    width: auto;
+  }
+
+  .input-form input {
+    width: auto;
+    height: 0px;
+    font-size: 18px;
+  }
+
+  .btn {
+    width: 80%;
+    height: 35px;
+  }
+
+  .card-member {
+    padding: 8px 10px;
+    width: 80%;
+    transform: translate(-18%, -55%);
+    flex-direction: column;
+    height: fit-content;
+    gap: 10px;
+  }
+
+  .card-title {
+    font-size: 15px;
+  }
+
+  .card-member .btn-create {
+    font-size: 14px;
+    width: 30%;
+    height: 30px;
+  }
+
+  footer {
+    padding: 60px 40px;
+    flex-direction: column-reverse;
+  }
+
+  .footer-desc .footer-icon,
+  .footer-desc .desc {
+    position: relative;
+    transform: translateY(-155px);
+  }
+
+  .footer-menu {
+    transform: translateY(175px);
+  }
+
+  .footer-menu .product h2,
+  .footer-menu .engage h2 {
+    font-size: 16px;
+  }
+
+  .social-media,
+  .footer-desc .copyright {
+    transform: translateY(30px);
   }
 }

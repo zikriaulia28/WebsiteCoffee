@@ -11,7 +11,7 @@
     type="image/x-icon">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Coffee Shop - Product</title>
+  <title>Coffee Shop - Profile</title>
 </head>
 
 <body>
@@ -25,8 +25,8 @@
       </div>
       <div class="menu-list pointer">
         <ul>
-          <li>Home</li>
-          <li class="active">Product</li>
+          <li><a href="../index.html">Home</a></li>
+          <li class="active"><a href="../Product/index.html">Product</a></li>
           <li>Your Cart</li>
           <li>History</li>
         </ul>
@@ -34,13 +34,13 @@
       <div class="profile pointer">
         <ul>
           <div class="search">
-            <img src="./assets/search.svg" alt="search">
+            <img src="../assets/search.svg" alt="search">
           </div>
-          <li><img src="./assets/chat.svg" alt="notif-chat"></li>
-          <li><img src="./assets/profil.svg" alt="profil"></li>
+          <li><img src="../assets/chat.svg" alt="notif-chat"></li>
+          <li><a href="index.html"><img src="../assets/profil.svg" alt="profil"></a></li>
         </ul>
       </div>
-      <img src="./assets/menu-icon.svg" alt="menu-icon" class="menu">
+      <img src="../assets/menu-icon.svg" alt="menu-icon" class="menu">
     </nav>
   </header>
   <section class="container-profile">
@@ -52,7 +52,7 @@
         <div class="card-user">
           <div class="profile-card">
             <div class="img">
-              <div class="icon"><img src="./assets/pencil.png" alt="pencil"></div>
+              <div class="icon"><img src="../assets/pencil.svg" alt="pencil"></div>
             </div>
             <div class="txt">
               <p class="name">Zulaikha</p>
@@ -66,7 +66,7 @@
             <div class="title">
               Contacts
             </div>
-            <div class="icon"><img src="./assets/pencil.png" alt="pencil"></div>
+            <div class="icon"><img src="../assets/pencil.svg" alt="pencil"></div>
           </div>
           <form>
             <div class="forms">
@@ -90,9 +90,9 @@
         <div class="form-details">
           <div class="form-header">
             <div class="title">
-              Contacts
+              Details
             </div>
-            <div class="icon"><img src="./assets/pencil.png" alt="pencil"></div>
+            <div class="icon"><img src="../assets/pencil.svg" alt="pencil"></div>
           </div>
           <form>
             <div class="forms">
@@ -112,12 +112,12 @@
               </div>
               <div class="radio">
                 <div class="gender">
-                  <input type="radio">
-                  <p>Male</p>
+                  <input type="radio" id="male" name="selector">
+                  <label for="male">Male</label>
                 </div>
                 <div class="gender">
-                  <input type="radio">
-                  <p>Female</p>
+                  <input type="radio" id="female" name="selector">
+                  <label for="female">Female</label>
                 </div>
               </div>
             </div>
@@ -130,16 +130,20 @@
         <div class="btn-group">
           <p class="title">Do you want to save the <br /> change?</p>
           <div class="btn">
-            <button class="save">Save Change</button>
-            <button class="cancle">Cancel</button>
-            <button class="edit">
-              <p>Edit Password</p>
-              <img src="./assets/arrow.svg" alt="arrow">
-            </button>
-            <button class="logout">
-              <p>Log Out</p>
-              <img src="./assets/arrow.svg" alt="arrow">
-            </button>
+            <div class="flex">
+              <button class="save">Save Change</button>
+              <button class="cancle">Cancel</button>
+            </div>
+            <div class="flex">
+              <button class="edit">
+                <p>Edit Password</p>
+                <img src="../assets/arrow-.svg" alt="arrow">
+              </button>
+              <button class="logout">
+                <p>Log Out</p>
+                <img src="../assets/arrow-.svg" alt="arrow">
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -150,7 +154,7 @@
     <div class="footer-desc">
       <div class="footer-icon">
         <img
-          src="https://s3-alpha-sig.figma.com/img/e8f1/50f4/dd316b36489ed2498bae94124e7ee124?Expires=1675641600&Signature=SeEj3GJTombcmN07yLmcTlGVHT3kIUGSBYBw3cMogTONGXzOZLEXg5peWB8GbC8QSUg5dGhOD757YlfBSnvC9Yd-2yfOwNlr6AsRvJnr15dFgwfZOxsmYuA1dhUDoxKL4Ja9Z0G8dSjZfciru0Qz9IVjLOC0RQdP0mmI9H~7mAjp6pack8UACkDibS1B~eyYaz6u6EG4KFUPHvSjokDxlxiXrSEruICYhPHJnMSBfV8XcDI~2z22wbgOGdjghs1ijFMBLcz6PW0c2j2-miXXKPXTERmuCYkI~3HhMAWfh5GCuCV7DKDhFRkBWoQpTlwHtSCceyLnMsjldd4PFyV8ow__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          src="https://s3-alpha-sig.figma.com/img/e8f1/50f4/dd316b36489ed2498bae94124e7ee124?Expires=1676851200&Signature=NcJrVv63eTjEkvOTLSaWgLjHWGrc0kIOewtLwdsw9ZcjCnEDAUV9ToIwRW555ufrMTDNCHakiNQ74KE5cgth2tbQvt8qtgFqK0lDlR7tpiGmCgUXoWaTGfxh4NIjiFHFgk~qHsanoLY04AQYlRL~SI~AnmU78pur6XGKBT5d68U7bwdBiNDuGWWSD6UhcRsLTVfl7KdWbj7JN-pw3qhYqux4IIEP0DYa7BszJPtBjoY4U8lO0wzxTYyJBLk-zCulV5sjGHApIzg-~Hp20tN3lSaz1As20Xc5HPWr7S~SFszzWWDj1E8PrRtS7-w3DqAu-J0yqAWbL~iqIAaGjqMUUg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
           alt="icon-coffee">
         <h2 class="title">Coffee Shop</h2>
       </div>

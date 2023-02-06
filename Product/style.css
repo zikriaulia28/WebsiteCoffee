@@ -7,6 +7,7 @@
   --shadow: #BCBABA;
   --font-primary: 'Rubik', sans-serif;
   --font-secondary: 'Poppins', sans-serif;
+  --padding-secondary: 100px
 }
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@400;700;900&family=Rubik:wght@400;500;600;700;800&display=swap');
@@ -23,6 +24,10 @@ body {
   max-width: 1482px;
 }
 
+a {
+  color: #000000;
+}
+
 .pointer {
   cursor: pointer;
   -webkit-user-select: none;
@@ -37,6 +42,7 @@ header {
   height: 80px;
   background-color: var(--background-primary);
   border-bottom: 0.5px solid var(--color-line);
+  padding: 0px var(--padding-secondary);
 }
 
 header>* {
@@ -48,7 +54,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 60px;
+
 }
 
 nav .logo {
@@ -82,7 +88,8 @@ nav .menu-list ul li {
   font-size: 14px;
 }
 
-nav .menu-list .active {
+nav .menu-list .active,
+nav .menu-list ul li:hover {
   font-size: 16px;
   font-weight: 700;
   color: var(--color-secondary);
@@ -96,6 +103,19 @@ nav .menu-profile ul {
 
 nav .menu-profile ul .search {
   background-color: var(--background-secondary);
+}
+
+nav .profile ul .notif::after {
+  content: "1";
+  background-color: var(--color-secondary);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  color: var(--background-secondary);
+  font-size: 12px;
+  transform: translate(-37px, -6px);
 }
 
 nav .profile ul {
@@ -424,6 +444,13 @@ footer {
 }
 
 @media (max-width: 768px) {
+  header {
+    padding: 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+
   nav {
     padding: 0px 50px;
   }
@@ -438,22 +465,28 @@ footer {
   }
 
   .container-product {
-    padding: 0px 50px;
+    padding: 0px 0px;
     flex-direction: column-reverse;
   }
 
   .menu-product {
-    padding: 30px 0px;
+    padding: 30px 60px;
+  }
+
+  .menu-product ul {
+    display: none;
   }
 
   .card-wrapper {
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
+    margin-top: 10%;
   }
 
   .product-txt {
     padding: 30px 0px;
     border: none;
+    border-top: 2px dashed;
   }
 
   footer {
@@ -468,4 +501,52 @@ footer {
     margin-bottom: 0px;
   }
 
+}
+
+@media (max-width: 428px) {
+  :root {
+    --padding-secondary: 40px;
+  }
+
+  nav {
+    padding: 10px 40px;
+  }
+
+  .menu-product {
+    padding: 0px 10px;
+  }
+
+  .menu-product ul {
+    display: none;
+  }
+
+  .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  footer {
+    padding: 60px 40px;
+    flex-direction: column-reverse;
+  }
+
+  .footer-desc .footer-icon,
+  .footer-desc .desc {
+    position: relative;
+    transform: translateY(-155px);
+  }
+
+  .footer-menu {
+    transform: translateY(175px);
+  }
+
+  .footer-menu .product h2,
+  .footer-menu .engage h2 {
+    font-size: 16px;
+  }
+
+  .social-media,
+  .footer-desc .copyright {
+    transform: translateY(30px);
+  }
 }
