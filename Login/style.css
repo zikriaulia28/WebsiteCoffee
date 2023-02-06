@@ -187,7 +187,7 @@ a {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 176px 151px;
+  padding: 176px 100px;
   background-color: var(--background-primary);
 }
 

@@ -121,7 +121,7 @@ body {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 100px 151px;
+  padding: 100px 100px;
   background-color: var(--background-primary);
 }
 
