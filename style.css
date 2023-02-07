@@ -303,22 +303,16 @@ nav>.login .signup {
 .style-img1 {
   background-image: url(./assets/fav1.webp);
   background-repeat: no-repeat;
-  background-size: 150%;
-  background-position: right -24px bottom -60px;
 }
 
 .style-img2 {
   background-image: url(./assets/fav2.webp);
   background-repeat: no-repeat;
-  background-size: 150%;
-  background-position: right -38px bottom -80px;
 }
 
 .style-img3 {
   background-image: url(./assets/fav3.webp);
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: right 0px bottom -13px;
 }
 
 .fav-list ul {
@@ -401,6 +395,7 @@ nav>.login .signup {
 .container-testimoni .partners .sponsor {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 47px;
 }
 
@@ -409,6 +404,7 @@ nav>.login .signup {
 }
 
 .sponsor li img {
+  width: 100%;
   width: 100%;
   filter: grayscale(100%);
   opacity: 0.5;
@@ -591,7 +587,6 @@ footer {
   border-radius: 50%;
   width: 34px;
   height: 34px;
-  background-color: var(--color-primary);
 }
 
 .fa-facebook,
