@@ -6,9 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon"
-    href="https://s3-alpha-sig.figma.com/img/e8f1/50f4/dd316b36489ed2498bae94124e7ee124?Expires=1676246400&Signature=QbU6s26UL2jrR5inprFCe6Yw8kwFd1tCGUF-NTHQWA7i~YZ2lEfspSx6TbEXtrVtPJlAkaKL3~BbCUOMw4PsmNs1p2owypMm~jUkARI3yJ5ulo39eE3pkjj3rRFbR6w6bcTIX70UPRt4SO2xrH01a9MAxdPG9w5DbU5NjUoMRv-hgxq15jFs~mSPmjzYIemIaQeCQCf~RRs~ITpyqRzE~RN2GFDQbBrQIkkoyxUMfxnoscn1ZL6ECwmjGXouLsmXjUBcv6F26LkgwJGI1YZI2mZz2msMWq9rgGyyEKjFMG6Q-cgfW005PZ3-5VCA7EOZ3qAZA6goeagaeMS4fI7KNQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-    type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/icon-coffee.svg" type="image/x-icon">
   <title>Coffee Shop - Home</title>
 </head>
 
@@ -16,7 +14,7 @@
   <header>
     <nav>
       <div class="logo pointer">
-        <img src="./assets/icon-coffee.svg" alt="icon-coffee">
+        <img fetchpriority="low" src="./assets/icon-coffee.svg" alt="icon-coffee">
         <h1 class="logo-title">Coffee Shop</h1>
       </div>
       <div class="menu-list pointer">
@@ -33,7 +31,7 @@
           <li><a class="signup" href="./SignUp/index.html">Sign Up</a></li>
         </ul>
       </div>
-      <img src="./assets/menu-icon.svg" alt="menu-icon" class="menu">
+      <img fetchpriority="low" src="./assets/menu-icon.svg" alt="menu-icon" class="menu">
     </nav>
   </header>
   <section class="container-home">
@@ -49,7 +47,7 @@
     <div class="card">
       <div class="staff">
         <div class="img">
-          <img src="./assets/people.svg" alt="icon">
+          <img fetchpriority="low" src="./assets/people.svg" alt="icon">
         </div>
         <div class="txt">
           <p class="number">90+</p>
@@ -58,7 +56,7 @@
       </div>
       <div class="stores">
         <div class="img">
-          <img src="./assets/location.svg" alt="icon">
+          <img fetchpriority="low" src="./assets/location.svg" alt="icon">
         </div>
         <div class="txt">
           <p class="number">30+</p>
@@ -67,7 +65,7 @@
       </div>
       <div class="customers">
         <div class="img">
-          <img src="./assets/love.svg" alt="icon">
+          <img fetchpriority="low" src="./assets/love.svg" alt="icon">
         </div>
         <div class="txt">
           <p class="number">800+</p>
@@ -82,16 +80,28 @@
         <p class="desc">You can explore the menu that we provide with fun and <br /> have their own taste and make your
           day better.</p>
         <ul class="benefit-list">
-          <li><img src="./assets/check-list.svg" alt="checklist">
+          <li>
+            <div class="container-img">
+              <img src="./assets/check-list.svg" alt="checklist">
+            </div>
             <p>High quality beans</p>
           </li>
-          <li><img src="./assets/check-list.svg" alt="checklist">
+          <li>
+            <div class="container-img">
+              <img src="./assets/check-list.svg" alt="checklist">
+            </div>
             <p>Healthy meals, you can request the ingredients</p>
           </li>
-          <li><img src="./assets/check-list.svg" alt="checklist">
+          <li>
+            <div class="container-img">
+              <img src="./assets/check-list.svg" alt="checklist">
+            </div>
             <p>Chat with our staff to get better experience for ordering</p>
           </li>
-          <li><img src="./assets/check-list.svg" alt="checklist">
+          <li>
+            <div class="container-img">
+              <img src="./assets/check-list.svg" alt="checklist">
+            </div>
             <p>Free member card with a minimum purchase of IDR 200.000.</p>
           </li>
         </ul>
@@ -109,16 +119,28 @@
           <h2 class="name">Hazelnut Latte</h2>
           <div class="fav-list">
             <ul>
-              <li><img src="./assets/checklist.svg" alt="checklist">
+              <li>
+                <div class="img-fav">
+                  <img fetchpriority="low" src="./assets/checklist.svg" alt="checklist">
+                </div>
                 <p>HazelnutSyrup</p>
               </li>
-              <li><img src="./assets/checklist.svg" alt="checklist">
+              <li>
+                <div class="img-fav">
+                  <img fetchpriority="low" src="./assets/checklist.svg" alt="checklist">
+                </div>
                 <p>Wanilla Whipped Cream</p>
               </li>
-              <li><img src="./assets/checklist.svg" alt="checklist">
+              <li>
+                <div class="img-fav">
+                  <img fetchpriority="low" src="./assets/checklist.svg" alt="checklist">
+                </div>
                 <p>Ice / Hot</p>
               </li>
-              <li><img src="./assets/checklist.svg" alt="checklist">
+              <li>
+                <div class="img-fav">
+                  <img fetchpriority="low" src="./assets/checklist.svg" alt="checklist">
+                </div>
                 <p>Sliced Banana on Top</p>
               </li>
             </ul>
@@ -136,19 +158,34 @@
           <h2 class="name">Pinky Promise</h2>
           <div class="fav-list">
             <ul>
-              <li><img src="./assets/checklist.svg" alt="checklist">
+              <li>
+                <div class="img-fav">
+                  <img fetchpriority="low" src="./assets/checklist.svg" alt="checklist">
+                </div>
                 <p>1 Shot of Coffee</p>
               </li>
-              <li><img src="./assets/checklist.svg" alt="checklist">
+              <li>
+                <div class="img-fav">
+                  <img fetchpriority="low" src="./assets/checklist.svg" alt="checklist">
+                </div>
                 <p>Vanilla Whipped Cream</p>
               </li>
-              <li><img src="./assets/checklist.svg" alt="checklist">
+              <li>
+                <div class="img-fav">
+                  <img fetchpriority="low" src="./assets/checklist.svg" alt="checklist">
+                </div>
                 <p>Chocolate Biscuits</p>
               </li>
-              <li><img src="./assets/checklist.svg" alt="checklist">
+              <li>
+                <div class="img-fav">
+                  <img fetchpriority="low" src="./assets/checklist.svg" alt="checklist">
+                </div>
                 <p>Strawberry Syrup</p>
               </li>
-              <li><img src="./assets/checklist.svg" alt="checklist">
+              <li>
+                <div class="img-fav">
+                  <img fetchpriority="low" src="./assets/checklist.svg" alt="checklist">
+                </div>
                 <p>Sliced strawberry on Top</p>
               </li>
             </ul>
@@ -166,22 +203,40 @@
           <h2 class="name">Chicken Wings</h2>
           <div class="fav-list">
             <ul>
-              <li><img src="./assets/checklist.svg" alt="checklist">
+              <li>
+                <div class="img-fav">
+                  <img fetchpriority="low" src="./assets/checklist.svg" alt="checklist">
+                </div>
                 <p>Wings</p>
               </li>
-              <li><img src="./assets/checklist.svg" alt="checklist">
+              <li>
+                <div class="img-fav">
+                  <img fetchpriority="low" src="./assets/checklist.svg" alt="checklist">
+                </div>
                 <p>Drum Sticks</p>
               </li>
-              <li><img src="./assets/checklist.svg" alt="checklist">
+              <li>
+                <div class="img-fav">
+                  <img fetchpriority="low" src="./assets/checklist.svg" alt="checklist">
+                </div>
                 <p>Mayonaise and Lemon</p>
               </li>
-              <li><img src="./assets/checklist.svg" alt="checklist">
+              <li>
+                <div class="img-fav">
+                  <img fetchpriority="low" src="./assets/checklist.svg" alt="checklist">
+                </div>
                 <p>Hot Fried</p>
               </li>
-              <li><img src="./assets/checklist.svg" alt="checklist">
+              <li>
+                <div class="img-fav">
+                  <img fetchpriority="low" src="./assets/checklist.svg" alt="checklist">
+                </div>
                 <p>Secret Recipe</p>
               </li>
-              <li><img src="./assets/checklist.svg" alt="checklist">
+              <li>
+                <div class="img-fav">
+                  <img fetchpriority="low" src="./assets/checklist.svg" alt="checklist">
+                </div>
                 <p>Buy 1 Get 1 only for Dine in</p>
               </li>
             </ul>
@@ -198,18 +253,18 @@
     <div class="partner-wrapper">
       <h1 class="title">Visit Our Store in the <br /> Spot on the Map Below</h1>
       <p class="desc">See our store in every city on the spot and spen your good day there. See <br /> you soon!</p>
-      <div class="map"><img src="./assets/map.svg" alt="map"></div>
+      <div class="map"><img fetchpriority="low" src="./assets/map.svg" alt="map"></div>
     </div>
   </section>
   <section class="container-testimoni">
     <div class="partners">
       <h2 class="title-partner">Our Partner</h2>
       <ul class="sponsor">
-        <li><img src="./assets/netflix.webp" alt="netflix"></li>
-        <li><img src="./assets/reddit.webp" alt="reddit"></li>
-        <li><img src="./assets/amazon.webp" alt="amazon"></li>
-        <li><img src="./assets/discord.webp" alt="discord"></li>
-        <li><img src="./assets/spotify.webp" alt="spotify"></li>
+        <li><img fetchpriority="low" src="./assets/netflix.webp" alt="netflix"></li>
+        <li><img fetchpriority="low" src="./assets/reddit.webp" alt="reddit"></li>
+        <li><img fetchpriority="low" src="./assets/amazon.webp" alt="amazon"></li>
+        <li><img fetchpriority="low" src="./assets/discord.webp" alt="discord"></li>
+        <li><img fetchpriority="low" src="./assets/spotify.webp" alt="spotify"></li>
       </ul>
     </div>
     <h1 class="title">Loved by Thousands of <br /> Happy Customer</h1>
@@ -218,7 +273,9 @@
       <div class="card">
         <div class="header">
           <div class="profile">
-            <img src="./assets/testi1.webp" alt="profile">
+            <div class="img">
+              <img fetchpriority="low" src="./assets/testi1.webp" alt="profile">
+            </div>
             <div class="txt">
               <h2>Viezh Robert</h2>
               <p>Warsaw, Poland</p>
@@ -226,7 +283,9 @@
           </div>
           <div class="rate">
             <p>4.5</p>
-            <img src="./assets/star.svg" alt="star">
+            <div class="container-star">
+              <img fetchpriority="low" src="./assets/star.svg" alt="star">
+            </div>
           </div>
         </div>
         <div class="card-desc">
@@ -238,7 +297,9 @@
       <div class="card">
         <div class="header">
           <div class="profile">
-            <img src="./assets/testi2.webp" alt="profile">
+            <div class="img">
+              <img fetchpriority="low" src="./assets/testi2.webp" alt="profile">
+            </div>
             <div class="txt">
               <h2>Yessica Christy</h2>
               <p>Shanxi, China</p>
@@ -246,7 +307,9 @@
           </div>
           <div class="rate">
             <p>4.5</p>
-            <img src="./assets/star.svg" alt="star">
+            <div class="container-star">
+              <img fetchpriority="low" src="./assets/star.svg" alt="star">
+            </div>
           </div>
         </div>
         <div class="card-desc">
@@ -257,7 +320,9 @@
       <div class="card">
         <div class="header">
           <div class="profile">
-            <img src="./assets/testi3.webp" alt="profile">
+            <div class="img">
+              <img fetchpriority="low" src="./assets/testi3.webp" alt="profile">
+            </div>
             <div class="txt">
               <h2>Kim Young Jou</h2>
               <p>Seoul, South Korea</p>
@@ -265,7 +330,9 @@
           </div>
           <div class="rate">
             <p>4.5</p>
-            <img src="./assets/star.svg" alt="star">
+            <div class="container-star">
+              <img fetchpriority="low" src="./assets/star.svg" alt="star">
+            </div>
           </div>
         </div>
         <div class="card-desc">
@@ -276,30 +343,38 @@
     </div>
     <div class="pagination">
       <div class="left">
-        <button class="page-active"></button>
-        <button></button>
-        <button></button>
-        <button></button>
+        <div class="page-active"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
       </div>
       <div class="right">
-        <button class="arrow-left"><img src="./assets/arrow.svg" alt="arrow"></button>
-        <button class="arrow-right"><img src="./assets/arrow.svg" alt="arrow"></button>
+        <div class="btn arrow-left">
+          <div class="btn-circle">
+            <img fetchpriority="low" src="./assets/arrow.svg" alt="arrow">
+          </div>
+        </div>
+        <div class="btn arrow-right">
+          <div class="btn-circle">
+            <img fetchpriority="low" src="./assets/arrow.svg" alt="arrow">
+          </div>
+        </div>
       </div>
     </div>
   </section>
   <footer>
     <div class="footer-desc">
       <div class="footer-icon">
-        <img src="./assets/icon-coffee.svg" alt="icon-coffee">
+        <img fetchpriority="low" src="./assets/icon-coffee.svg" alt="icon-coffee">
         <h2 class="title">Coffee Shop</h2>
       </div>
       <p class="desc">Coffee Shop is a store that sells some good <br /> meals, and especially coffee. We provide
         <br /> high quality beans</p>
       <div class="social-media">
         <ul>
-          <li><a href="#"><img src="./assets/fb.svg" alt="facebook"></a></li>
-          <li><a href="#"><img src="./assets/twitter.svg" alt="twitter"></a></li>
-          <li><a href="#"><img src="./assets/ig.svg" alt="instagram"></a></li>
+          <li><a href="#"><img fetchpriority="low" src="./assets/fb.svg" alt="facebook"></a></li>
+          <li><a href="#"><img fetchpriority="low" src="./assets/twitter.svg" alt="twitter"></a></li>
+          <li><a href="#"><img fetchpriority="low" src="./assets/ig.svg" alt="instagram"></a></li>
         </ul>
       </div>
       <div class="copyright">&copy;2020CoffeeStore</div>
