@@ -124,7 +124,7 @@ body {
   width: 10%;
   font-size: 12px;
   position: absolute;
-  transform: translate(-28px, 7px);
+  transform: translate(-20vw, 7px);
   color: #CF0A0A;
 }
 
@@ -328,7 +328,7 @@ footer {
   }
 
   .form-email span {
-    transform: translate(90px, -50px);
+    transform: translate(-12vw, -50px);
     width: fit-content;
   }
 
@@ -399,19 +399,23 @@ footer {
   }
 
   .form-email span {
-    transform: translate(50px, -50px);
+    transform: translate(-11vw, -50px);
   }
 
   .circle-check {
     transform: translate(100px, -37px);
   }
 
+  .modal {
+    width: max-content;
+  }
+
   .modal h3 {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .modal p {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   footer {

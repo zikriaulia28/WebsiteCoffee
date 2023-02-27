@@ -121,10 +121,10 @@ a {
 }
 
 .input-form span {
-  width: 10%;
+  width: max-content;
   font-size: 12px;
   position: absolute;
-  transform: translate(-150px, 20px);
+  transform: translate(-36vw, 20px);
   color: #CF0A0A;
 }
 
@@ -412,6 +412,18 @@ footer {
     width: 30%;
   }
 
+  .input-form span {
+    transform: translate(-63vw, 20px);
+  }
+
+  .modal {
+    width: max-content;
+  }
+
+  .modal h3 {
+    font-size: 20px;
+  }
+
   footer {
     padding: 100px 80px;
   }
@@ -486,23 +498,23 @@ footer {
   }
 
   .input-form span {
-    transform: translate(-158px, 15px);
+    transform: translate(-265px, 15px);
     width: 40%;
   }
 
   .circle-check {
-    transform: translate(246px, -36px);
+    transform: translate(58vw, -36px);
   }
 
   .modal {
-    width: auto;
+    width: max-content;
     height: auto;
     transform: translate(-50%, -50%);
     padding: 20px;
   }
 
   .modal h3 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .modal p {
