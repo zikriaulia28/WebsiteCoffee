@@ -62,22 +62,23 @@
             <div class="title">
               Contacts
             </div>
-            <div class="icon"><img src="../assets/pencil.svg" alt="pencil"></div>
+            <div class="icon" onclick="enableEdit()"><img src="../assets/pencil.svg" alt="pencil"></div>
           </div>
           <form>
             <div class="forms">
               <div class="input-form">
                 <p class="title">Email adress :</p>
-                <input type="text" class="email" value="zulaikha17@gmail.com">
+                <input type="text" class="email" id="email" value="zulaikha17@gmail.com" readonly>
               </div>
               <div class="input-form">
                 <p class="title">Mobile number :</p>
-                <input type="text" class="number" value="(+62)813456782">
+                <input type="text" class="number" id="number" value="(+62)813456782" readonly>
               </div>
             </div>
             <div class="input-form">
               <p class="title">Delivery adress :</p>
-              <input type="text" class="address" value="Iskandar Street no. 67 Block A Near Bus Stop">
+              <input type="text" class="address" id="address" value="Iskandar Street no. 67 Block A Near Bus Stop"
+                readonly>
             </div>
           </form>
         </div>
@@ -127,7 +128,7 @@
           <p class="title">Do you want to save the <br /> change?</p>
           <div class="btn">
             <div class="flex">
-              <button class="save">Save Change</button>
+              <button class="save pointer" onclick="saveForm()">Save Change</button>
               <button class="cancle">Cancel</button>
             </div>
             <div class="flex">
