@@ -145,10 +145,6 @@ a {
   height: 28px;
 }
 
-.card {
-  padding: 0px 100px;
-}
-
 .card-member {
   display: flex;
   justify-content: space-between;
@@ -157,8 +153,8 @@ a {
   border-radius: 10px;
   padding: 59px 70px;
   box-shadow: 0 0 57px 0 rgba(0, 0, 0, 0.06);
+  transform: translate(10%, -50%);
   position: absolute;
-  transform: translate(0%, -50%);
   width: 1140px;
 }
 
@@ -396,7 +392,7 @@ footer {
   .card-member {
     width: 80%;
     height: 10%;
-    transform: translate(-3%, -50%);
+    transform: translate(12%, -50%);
   }
 
   .card-title {
@@ -434,6 +430,7 @@ footer {
 
 @media (max-width: 428px) {
   .login {
+    padding: 20px;
     width: 100%;
   }
 
@@ -475,7 +472,7 @@ footer {
   .card-member {
     padding: 8px 10px;
     width: 80%;
-    transform: translate(-18%, -55%);
+    transform: translate(12%, -55%);
     flex-direction: column;
     height: fit-content;
     gap: 10px;
@@ -508,7 +505,7 @@ footer {
   }
 
   footer {
-    padding: 60px 40px;
+    padding: 60px 20px 40px;
     flex-direction: column-reverse;
   }
 
@@ -520,6 +517,7 @@ footer {
 
   .footer-menu {
     transform: translateY(175px);
+    justify-content: space-between;
   }
 
   .footer-menu .product h2,

@@ -419,7 +419,7 @@ footer {
   }
 
   footer {
-    padding: 60px 40px;
+    padding: 40px 20px 40px;
     flex-direction: column-reverse;
   }
 
@@ -431,6 +431,7 @@ footer {
 
   .footer-menu {
     transform: translateY(175px);
+    justify-content: space-between;
   }
 
   .footer-menu .product h2,

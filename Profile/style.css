@@ -109,22 +109,13 @@ nav .profile ul {
 }
 
 .container-profile {
-  background-image: url(https://s3-alpha-sig.figma.com/img/9e15/a72e/b94b169a2b3bf7010f10c4fce8c1d0a1?Expires=1676246400&Signature=MSUGjQqiX0xv0zwiG1U17OjjxDgbluQwUD74lcbZNbuDeU-WoQBWp9qwk4Djl1gY62KEzuoIWXYjYERUBNjGMOHsz02D9POzMjn64J78~Pwyp6SPO8OQn7iPYBOSmNz8NU6n9mDge65O-kd26klUbt91b7nHB~7ytisZyG4TrmLI1E4GqIJgbUHzX1Q6qjMbTOgAo6VBHOi4J5o4p5viJ9v4i8g3-f~5l2AZX~2sEDRBge6iJz7OAcCPTTJcZ90CBaUr4uFNvThNYS6-kIyfhIihDsbY-ztB2j1kshLNNXWIIgVL1mqFWTEMoZjbrVEibr~xTbIqZYuIV4LNbCJTWg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  background-image: url(../assets/profile.webp);
   height: auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 60px 173px;
 }
-
-/* .container-profile .profile-wrapper {
-  display: grid;
-  grid-template-columns: 2fr 1fr 3fr;
-  grid-template-areas:
-    "card-user form-contact form-contact"
-    "form-details form-details btn";
-  gap: 10px;
-} */
 
 .container-profile .profile-wrapper {
   display: flex;
@@ -163,7 +154,7 @@ nav .profile ul {
 }
 
 .card-user .profile-card .img {
-  background-image: url(https://s3-alpha-sig.figma.com/img/0ccd/b210/685819c7ff9c7e2cbb23e6190ab4ef92?Expires=1676246400&Signature=G3TSvLJVZR31jqMQJAyab2ca~a0KKnOzu~ZWCl0tUtm51R1BE-Ysz-RUf5Afd9gMgUlPDTTAZTwTWrOw22RN53LKn8n6dkG~9kB6ohF8-iQpYfxP9yrti3o8bYEcASO8fHsIQOoYRlLUf9-qU8Ypj4tfhKCwoIDqlWSTPXHJqDGR7yd0ucXvYoOHk-BRNZ1UnfyE5m0-9MP9N~BA6BDwwcXOr6aNZX-EX1d5wsWo7qxdsI6PVoKuZQt7Oq5Ar-wieYnnMJcACfUKSNSbik2szp~jIJdiNFMxQaUkz-51xwBkX5q7XnmKPzWtqcAQJepMsktk0GBRA~0LK9NgjyuT-Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  background-image: url(../assets/profile.webp);
   width: 128px;
   height: 128px;
   border-radius: 50%;
@@ -399,14 +390,43 @@ footer {
 /* Responsive */
 
 @media (max-width: 768px) {
+  nav .menu-list ul {
+    height: 100vh;
+    transform: translate(-42vw, 6%);
+    width: 100%;
+    background: var(--color-secondary);
+    position: absolute;
+    border-radius: 0px 0px 20px 20px;
+    opacity: 0;
+    padding: 139px 0px 20px;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .add-active {
+    opacity: 1 !important;
+  }
+
+  nav>.profile>ul {
+    position: relative;
+    transform: translate(-56%, 190%);
+    height: 10vh;
+    width: 467%;
+    justify-content: space-between;
+    opacity: 0;
+    z-index: 1;
+    background: white;
+    align-items: center;
+    padding: -7px;
+    border-radius: 10px;
+  }
+
   nav {
     padding: 0px 50px;
   }
 
-  nav .menu-list,
-  nav .profile {
-    display: none;
-  }
 
   nav .menu {
     display: inline;
@@ -476,7 +496,20 @@ footer {
 
 @media (max-width: 428px) {
   nav {
-    padding: 10px 40px;
+    padding: 10px 20px;
+  }
+
+  nav .menu-list ul {
+    transform: translate(-48%, 5%);
+    width: 100%;
+    height: 85vh;
+    border-radius: 0px 0px 20px 20px;
+    gap: 70px;
+  }
+
+  nav>.profile>ul {
+    transform: translate(-50%, 160%);
+    width: 200%;
   }
 
   .container-profile {

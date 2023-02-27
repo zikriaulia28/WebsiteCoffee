@@ -522,30 +522,28 @@ footer {
   }
 
   footer {
-    padding: 60px 20px;
-    flex-direction: column;
+    padding: 60px 20px 40px;
+    flex-direction: column-reverse;
+  }
+
+  .footer-desc .footer-icon,
+  .footer-desc .desc {
+    position: relative;
+    transform: translateY(-155px);
   }
 
   .footer-menu {
-    justify-content: flex-end;
-    gap: 20%;
+    transform: translateY(175px);
+    justify-content: space-between;
+  }
+
+  .footer-menu .product h2,
+  .footer-menu .engage h2 {
+    font-size: 16px;
   }
 
   .social-media,
   .footer-desc .copyright {
-    position: absolute;
-    transform: translateY(21rem);
-  }
-
-  .footer-desc .copyright {
-    transform: translateY(21rem);
-  }
-
-  .social-media {
-    transform: translateY(10rem);
-  }
-
-  .social-media ul {
-    flex-direction: column;
+    transform: translateY(30px);
   }
 }

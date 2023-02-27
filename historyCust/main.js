@@ -6,6 +6,9 @@ const modal = document.getElementById('modal');
 const modalDelete = document.getElementById('modalDelete');
 const modalCancel = document.getElementById('modalCancel');
 const itemsToDelete = [];
+const humberger = document.getElementById('humberger');
+const menuList = document.getElementById('menu-list');
+const profileList = document.getElementById('menu-profile');
 
 btnSelect.addEventListener('click', () => {
   checkAll();
@@ -45,8 +48,6 @@ checkboxes.forEach(checkbox => {
     }
   });
 });
-
-
 
 function showModal() {
   if (itemsToDelete.length === 0) {
@@ -112,4 +113,16 @@ modalCancel.addEventListener('click', () => {
   overlay.style.display = 'none';
   modal.style.display = 'none';
 });
+
+humberger.addEventListener('click', function (e) {
+  e.stopPropagation();
+  console.log('humberger');
+  menuList.classList.toggle('add-active');
+  profileList.classList.toggle('add-active');
+})
+
+window.addEventListener('click', function () {
+  menuList.classList.remove('add-active');
+  profileList.classList.remove('add-active');
+})
 
