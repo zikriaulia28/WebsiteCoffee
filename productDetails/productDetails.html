@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon"
+    href="https://s3-alpha-sig.figma.com/img/e8f1/50f4/dd316b36489ed2498bae94124e7ee124?Expires=1676246400&Signature=QbU6s26UL2jrR5inprFCe6Yw8kwFd1tCGUF-NTHQWA7i~YZ2lEfspSx6TbEXtrVtPJlAkaKL3~BbCUOMw4PsmNs1p2owypMm~jUkARI3yJ5ulo39eE3pkjj3rRFbR6w6bcTIX70UPRt4SO2xrH01a9MAxdPG9w5DbU5NjUoMRv-hgxq15jFs~mSPmjzYIemIaQeCQCf~RRs~ITpyqRzE~RN2GFDQbBrQIkkoyxUMfxnoscn1ZL6ECwmjGXouLsmXjUBcv6F26LkgwJGI1YZI2mZz2msMWq9rgGyyEKjFMG6Q-cgfW005PZ3-5VCA7EOZ3qAZA6goeagaeMS4fI7KNQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+    type="image/x-icon">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Coffee Shop - Product Details</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo pointer">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/e8f1/50f4/dd316b36489ed2498bae94124e7ee124?Expires=1676246400&Signature=QbU6s26UL2jrR5inprFCe6Yw8kwFd1tCGUF-NTHQWA7i~YZ2lEfspSx6TbEXtrVtPJlAkaKL3~BbCUOMw4PsmNs1p2owypMm~jUkARI3yJ5ulo39eE3pkjj3rRFbR6w6bcTIX70UPRt4SO2xrH01a9MAxdPG9w5DbU5NjUoMRv-hgxq15jFs~mSPmjzYIemIaQeCQCf~RRs~ITpyqRzE~RN2GFDQbBrQIkkoyxUMfxnoscn1ZL6ECwmjGXouLsmXjUBcv6F26LkgwJGI1YZI2mZz2msMWq9rgGyyEKjFMG6Q-cgfW005PZ3-5VCA7EOZ3qAZA6goeagaeMS4fI7KNQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          alt="icon-coffee">
+        <h1 class="logo-title">Coffee Shop</h1>
+      </div>
+      <div class="menu-list pointer">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li class="active"><a href="../Product/index.html">Product</a></li>
+          <li>Your Cart</li>
+          <li>History</li>
+        </ul>
+      </div>
+      <div class="profile pointer">
+        <ul>
+          <div class="search">
+            <img src="../assets/search.svg" alt="search">
+          </div>
+          <div class="notif"><img src="../assets/chat.svg" alt="notif-chat"></div>
+          <li><a href="../Profile/profile.html"><img src="../assets/profil.svg" alt="profil"></a></li>
+        </ul>
+      </div>
+      <img src="../assets/menu-icon.svg" alt="menu-icon" class="menu">
+    </nav>
+  </header>
+  <section class="container-product-details">
+    <div class="product-details">
+      <h1>Favorite & Promo <span> > Cold Brew </span></h1>
+      <div class="product-details-top">
+        <div class="left">
+          <div class="img"></div>
+          <div class="card-delivery">
+            <h3 class="title">Delivery and Time</h3>
+            <div class="radio-group pointer">
+              <input type="radio" id="mybtn1" name="selector">
+              <label for="mybtn1">Dine in</label>
+              <input type="radio" id="mybtn2" name="selector">
+              <label for="mybtn2">Door Delivery</label>
+              <input type="radio" id="mybtn3" name="selector">
+              <label for="mybtn3">Pick up</label>
+            </div>
+            <div class="select-time">
+              <p>Now</p>
+              <div class="radio-group pointer">
+                <input type="radio" id="mybtn4" name="selector">
+                <label for="mybtn4">Yes</label>
+                <input type="radio" id="mybtn5" name="selector">
+                <label for="mybtn5" class="marginleft">No</label>
+              </div>
+            </div>
+            <div class="set-time">
+              <p class="txt">Set time</p>
+              <input type="text" placeholder="Enter time for reservation">
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <h2 class="title">COLD BREW</h2>
+          <p class="desc">Cold brewing is a method of brewing that <br /> combines ground coffee and cool water <br />
+            and uses time
+            instead of heat to extract the <br /> flavor. It is brewed in small batches and <br /> steeped for as long
+            as 48 hours.
+            <br />
+            <div class="txt-delivery"> Delivery only on <span>Monday to <br /> friday</span> at <span>1 - 7 pm</span>
+            </div>
+          </p>
+          <div class="add">
+            <div class="btn-add">
+              <button class="add1">-</button>
+              <div class="add2">2</div>
+              <button class="add1">+</button>
+            </div>
+            <div class="price">IDR 30.000</div>
+          </div>
+          <div class="btn">
+            <button class="add-cart pointer">Add to Cart</button>
+            <button class="ask-staff pointer">Ask a Staff</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-details-bottom">
+        <div class="card-size">
+          <p class="title">Choose a size</p>
+          <div class="radio-size pointer">
+            <div class="rounded">
+              <input type="radio" id="radio1" name="selector">
+              <label for="radio1" class="roundeed">R</label>
+            </div>
+            <div class="rounded">
+              <input type="radio" id="radio2" name="selector">
+              <label for="radio2" class="roundeed">L</label>
+            </div>
+            <div class="rounded">
+              <input type="radio" id="radio3" name="selector">
+              <label for="radio3" class="roundeed">XL</label>
+            </div>
+          </div>
+        </div>
+        <div class="card-checkout">
+          <div class="imgs">
+            <div class="img"></div>
+            <div class="txt">
+              <h3>COLD BREW</h3>
+              <p>x1 (Large)</p>
+              <p>x1 (Regular)</p>
+            </div>
+          </div>
+          <div class="checkout">
+            <p class="txt">Checkout</p>
+            <button><img src="../assets/arrow.svg" alt="arrow"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-desc">
+      <div class="footer-icon">
+        <img
+          src="https://s3-alpha-sig.figma.com/img/e8f1/50f4/dd316b36489ed2498bae94124e7ee124?Expires=1676851200&Signature=NcJrVv63eTjEkvOTLSaWgLjHWGrc0kIOewtLwdsw9ZcjCnEDAUV9ToIwRW555ufrMTDNCHakiNQ74KE5cgth2tbQvt8qtgFqK0lDlR7tpiGmCgUXoWaTGfxh4NIjiFHFgk~qHsanoLY04AQYlRL~SI~AnmU78pur6XGKBT5d68U7bwdBiNDuGWWSD6UhcRsLTVfl7KdWbj7JN-pw3qhYqux4IIEP0DYa7BszJPtBjoY4U8lO0wzxTYyJBLk-zCulV5sjGHApIzg-~Hp20tN3lSaz1As20Xc5HPWr7S~SFszzWWDj1E8PrRtS7-w3DqAu-J0yqAWbL~iqIAaGjqMUUg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          alt="icon-coffee">
+        <h2 class="title">Coffee Shop</h2>
+      </div>
+      <p class="desc">Coffee Shop is a store that sells some good <br /> meals, and especially coffee. We provide
+        <br /> high quality beans</p>
+      <div class="social-media">
+        <ul>
+          <li><a href="#" class="fa fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-twitter"></a></li>
+          <li><a href="#" class="fa fa-instagram"></a></li>
+        </ul>
+      </div>
+      <div class="copyright">&copy;2020CoffeeStore</div>
+    </div>
+    <div class="footer-menu">
+      <div class="product">
+        <h2>Product</h2>
+        <ul class="product-list">
+          <li>Download</li>
+          <li>Pricing</li>
+          <li>Locations</li>
+          <li>Countries</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+      <div class="engage">
+        <h2>Engage</h2>
+        <ul class="engage-list">
+          <li>Coffe Shop ?</li>
+          <li>FAQ</li>
+          <li>About Us</li>
+          <li>Privacy Policy</li>
+          <li>Terms of Service</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

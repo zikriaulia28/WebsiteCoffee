@@ -25,7 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(https://s3-alpha-sig.figma.com/img/245d/3c2d/d9b99b0f8bb8ff1c5992ab8bd7684491?Expires=1676851200&Signature=I8E0fJwLn2gyAQrLc3GqVV7cEIHR6uSZ4Q2vwaYZ6vSzUJdBOYYTYI3es6PJrNl5mYzTC~ccjY~HYlESKMA-7iiayZpvCiKdnSC9MTJzAs9HZEIqMB~0cEgObQfEmYiXVpiInVhMhwtG~h-wJtzv5mkF4mzkNL~XroKDsBTfx1H2-CrNO-YFZCETYA5-R1MhLACN0m8oOEjFnN9TdUAn3JDI8ToNG75I1AJ~qmDhX1ls3pXLzWZ4WEf~EVzw-rtSOMsV9lPurjVvtHpNq76SETzW854UnNMRzuwSugqOqHFQT9pHxe3J2njKuq0LjkZuRPgpvavF0MY9ih7KYfnxwA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+  background-image: url(../assets/bg-forgot.webp);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -62,7 +62,9 @@ body {
 
 .form-email {
   display: flex;
+  justify-content: center;
   gap: 2.3rem;
+  margin-bottom: 50px;
 }
 
 .form-email input,
@@ -70,11 +72,11 @@ body {
 .btn-resend {
   border: none;
   border-radius: 20px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .form-email input {
-  width: 820px;
+  width: 400px;
   height: 80px;
   padding: 35px 42px;
   outline: none;
@@ -102,7 +104,7 @@ body {
 }
 
 .btn-resend {
-  width: 420px;
+  width: 253px;
   height: 80px;
   background-color: var(--color-secondary);
   color: var(--background-secondary);
@@ -116,6 +118,108 @@ body {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.form-email span {
+  width: 10%;
+  font-size: 12px;
+  position: absolute;
+  transform: translate(-28px, 7px);
+  color: #CF0A0A;
+}
+
+.form-email .submitError {
+  transform: translate(125%, 7px);
+  width: 13%;
+}
+
+form span {
+  font-size: 12px;
+  color: #CF0A0A;
+}
+
+/* modal */
+/* overlay and modal */
+
+.overlay {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal {
+  text-align: center;
+  width: 450px;
+  height: 200px;
+  position: fixed;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  display: none;
+}
+
+.modal h3 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #000000;
+}
+
+.modal p {
+  font-size: 18px;
+  color: #000000;
+}
+
+.modal button {
+  width: 100px;
+  height: 50px;
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 69px;
+}
+
+.modal .btnOke {
+  background-color: var(--background-secondary);
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+.modal .btnOke:hover {
+  background-color: var(--color-secondary);
+  color: var(--background-secondary);
+}
+
+.circle-check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid green;
+  position: absolute;
+  display: none;
+  transform: translate(28px, 30px);
+}
+
+.circle-check::before {
+  content: "\2713";
+  font-size: 15px;
+  font-weight: 700;
+  color: green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 footer {
@@ -223,6 +327,20 @@ footer {
     padding: 20px;
   }
 
+  .form-email span {
+    transform: translate(90px, -50px);
+    width: fit-content;
+  }
+
+  .form-email .submitError {
+    transform: translate(0%, -4px);
+    width: fit-content;
+  }
+
+  .circle-check {
+    transform: translate(144px, -37px);
+  }
+
   .btn-send {
     width: 30%;
     height: 50px;
@@ -242,6 +360,18 @@ footer {
   .btn-resend {
     width: 60%;
     height: 60px;
+  }
+
+  .modal {
+    width: auto;
+  }
+
+  .modal h3 {
+    font-size: 20px;
+  }
+
+  .modal p {
+    font-size: 16px;
   }
 
   footer {
@@ -266,6 +396,22 @@ footer {
   .btn-send,
   .btn-resend {
     font-size: 14px;
+  }
+
+  .form-email span {
+    transform: translate(50px, -50px);
+  }
+
+  .circle-check {
+    transform: translate(100px, -37px);
+  }
+
+  .modal h3 {
+    font-size: 14px;
+  }
+
+  .modal p {
+    font-size: 10px;
   }
 
   footer {

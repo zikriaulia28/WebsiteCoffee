@@ -6,10 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon"
-    href="
-    https://s3-alpha-sig.figma.com/img/e8f1/50f4/dd316b36489ed2498bae94124e7ee124?Expires=1675641600&Signature=SeEj3GJTombcmN07yLmcTlGVHT3kIUGSBYBw3cMogTONGXzOZLEXg5peWB8GbC8QSUg5dGhOD757YlfBSnvC9Yd-2yfOwNlr6AsRvJnr15dFgwfZOxsmYuA1dhUDoxKL4Ja9Z0G8dSjZfciru0Qz9IVjLOC0RQdP0mmI9H~7mAjp6pack8UACkDibS1B~eyYaz6u6EG4KFUPHvSjokDxlxiXrSEruICYhPHJnMSBfV8XcDI~2z22wbgOGdjghs1ijFMBLcz6PW0c2j2-miXXKPXTERmuCYkI~3HhMAWfh5GCuCV7DKDhFRkBWoQpTlwHtSCceyLnMsjldd4PFyV8ow__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-    type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/icon-coffee.svg" type="image/x-icon">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Coffee Shop - Forgot</title>
@@ -22,23 +19,30 @@
         <h1 class="forgot-title">Forgot your password?</h1>
         <p class="forgot-desc">Don't worry, we got your back!</p>
       </div>
-      <div class="form-email">
-        <input type="text" placeholder="Enter your email adress to get link">
-        <button class="btn-send pointer">Send</button>
-      </div>
-      <div class="resend">
-        <p class="resend-txt">Click here if you didn't receive any link <br /> in 2 minutes</p>
-        <button class="btn-resend pointer">Resend Link</button>
-        <p class="resend-time">01:54</p>
+      <form id="formForgot">
+        <div class="form-email">
+          <input type="text" placeholder="Enter your email address" id="emailInput" onkeyup="validasiEmail()">
+          <span id="emailError"></span>
+          <div class="circle-check" id="circleCheck"></div>
+          <span id="submitError" class="submitError"></span>
+          <button class="btn-send pointer" onclick="submitForm()">Send</button>
+        </div>
+        <div class="resend">
+          <p class="resend-txt">Click here if you didn't receive any link <br /> in 2 minutes</p>
+          <button class="btn-resend pointer">Resend Link</button>
+          <p class="resend-time">01:54</p>
+        </div>
+      </form>
+      <!-- Overlay dan modal -->
+      <div class="overlay" id="overlay"></div>
+      <div class="modal" id="modal">
       </div>
     </div>
   </section>
   <footer>
     <div class="footer-desc">
       <div class="footer-icon">
-        <img
-          src="https://s3-alpha-sig.figma.com/img/e8f1/50f4/dd316b36489ed2498bae94124e7ee124?Expires=1676851200&Signature=NcJrVv63eTjEkvOTLSaWgLjHWGrc0kIOewtLwdsw9ZcjCnEDAUV9ToIwRW555ufrMTDNCHakiNQ74KE5cgth2tbQvt8qtgFqK0lDlR7tpiGmCgUXoWaTGfxh4NIjiFHFgk~qHsanoLY04AQYlRL~SI~AnmU78pur6XGKBT5d68U7bwdBiNDuGWWSD6UhcRsLTVfl7KdWbj7JN-pw3qhYqux4IIEP0DYa7BszJPtBjoY4U8lO0wzxTYyJBLk-zCulV5sjGHApIzg-~Hp20tN3lSaz1As20Xc5HPWr7S~SFszzWWDj1E8PrRtS7-w3DqAu-J0yqAWbL~iqIAaGjqMUUg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-          alt="icon-coffee">
+        <img src="../assets/icon-coffee.svg" alt="icon-coffee">
         <h2 class="title">Coffee Shop</h2>
       </div>
       <p class="desc">Coffee Shop is a store that sells some good <br /> meals, and especially coffee. We provide
@@ -75,6 +79,7 @@
       </div>
     </div>
   </footer>
+  <script src="./main.js"></script>
 </body>
 
 </html>

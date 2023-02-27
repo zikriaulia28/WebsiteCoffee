@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon"
+    href="https://s3-alpha-sig.figma.com/img/e8f1/50f4/dd316b36489ed2498bae94124e7ee124?Expires=1676246400&Signature=QbU6s26UL2jrR5inprFCe6Yw8kwFd1tCGUF-NTHQWA7i~YZ2lEfspSx6TbEXtrVtPJlAkaKL3~BbCUOMw4PsmNs1p2owypMm~jUkARI3yJ5ulo39eE3pkjj3rRFbR6w6bcTIX70UPRt4SO2xrH01a9MAxdPG9w5DbU5NjUoMRv-hgxq15jFs~mSPmjzYIemIaQeCQCf~RRs~ITpyqRzE~RN2GFDQbBrQIkkoyxUMfxnoscn1ZL6ECwmjGXouLsmXjUBcv6F26LkgwJGI1YZI2mZz2msMWq9rgGyyEKjFMG6Q-cgfW005PZ3-5VCA7EOZ3qAZA6goeagaeMS4fI7KNQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+    type="image/x-icon">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Coffee Shop - Product Details</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo pointer">
+        <img src="../assets/icon-coffee.svg" alt="icon-coffee">
+        <h1 class="logo-title">Coffee Shop</h1>
+      </div>
+      <div class="menu-list pointer">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li class="active"><a href="../Product/index.html">Product</a></li>
+          <li>Your Cart</li>
+          <li>History</li>
+        </ul>
+      </div>
+      <div class="profile pointer">
+        <ul>
+          <div class="search">
+            <img src="../assets/search.svg" alt="search">
+          </div>
+          <div class="notif"><img src="../assets/chat.svg" alt="notif-chat"></div>
+          <li><a href="../Profile/index.html"><img src="../assets/profil.svg" alt="profil"></a></li>
+        </ul>
+      </div>
+      <img src="../assets/menu-icon.svg" alt="menu-icon" class="menu">
+    </nav>
+  </header>
+  <section class="container history">
+    <h1 class="title">Let’s see what you have bought!</h1>
+    <p class="desc-title">Select item to delete</p>
+    <p class="select pointer" id="btnSelect">Select All</p>
+    <p class="delete pointer" id="btnDelete">Delete</p>
+    <div class="card-container">
+      <div class="card">
+        <div class="img"></div>
+        <div class="desc">
+          <div class="card-title">
+            <h1>Veggie tomato mix</h1>
+          </div>
+          <div class="status">
+            <div class="status-top">
+              <p class="price">IDR 34.000</p>
+            </div>
+            <div class="status-bottom">
+              <p class="txt">Delivered</p>
+              <input type="checkbox" value="1">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"></div>
+        <div class="desc">
+          <div class="card-title">
+            <h1>Veggie tomato mix</h1>
+          </div>
+          <div class="status">
+            <div class="status-top">
+              <p class="price">IDR 34.000</p>
+            </div>
+            <div class="status-bottom">
+              <p class="txt">Delivered</p>
+              <input type="checkbox" value="2">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"></div>
+        <div class="desc">
+          <div class="card-title">
+            <h1>Veggie tomato mix</h1>
+          </div>
+          <div class="status">
+            <div class="status-top">
+              <p class="price">IDR 34.000</p>
+            </div>
+            <div class="status-bottom">
+              <p class="txt">Delivered</p>
+              <input type="checkbox" value="3">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"></div>
+        <div class="desc">
+          <div class="card-title">
+            <h1>Veggie tomato mix</h1>
+          </div>
+          <div class="status">
+            <div class="status-top">
+              <p class="price">IDR 34.000</p>
+            </div>
+            <div class="status-bottom">
+              <p class="txt">Delivered to Table 4</p>
+              <input type="checkbox" value="4">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"></div>
+        <div class="desc">
+          <div class="card-title">
+            <h1>Veggie tomato mix</h1>
+          </div>
+          <div class="status">
+            <div class="status-top">
+              <p class="price">IDR 34.000</p>
+            </div>
+            <div class="status-bottom">
+              <p class="txt">Delivered to Table 4</p>
+              <input type="checkbox" value="5">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"></div>
+        <div class="desc">
+          <div class="card-title">
+            <h1>Veggie tomato mix</h1>
+          </div>
+          <div class="status">
+            <div class="status-top">
+              <p class="price">IDR 34.000</p>
+            </div>
+            <div class="status-bottom">
+              <p class="txt">Delivered to Table 4</p>
+              <input type="checkbox" value="6">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"></div>
+        <div class="desc">
+          <div class="card-title">
+            <h1>Veggie tomato mix</h1>
+          </div>
+          <div class="status">
+            <div class="status-top">
+              <p class="price">IDR 34.000</p>
+            </div>
+            <div class="status-bottom">
+              <p class="txt">Delivered to Table 4</p>
+              <input type="checkbox" value="7">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"></div>
+        <div class="desc">
+          <div class="card-title">
+            <h1>Veggie tomato mix</h1>
+          </div>
+          <div class="status">
+            <div class="status-top">
+              <p class="price">IDR 34.000</p>
+            </div>
+            <div class="status-bottom">
+              <p class="txt">Delivered to Table 4</p>
+              <input type="checkbox" value="8">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"></div>
+        <div class="desc">
+          <div class="card-title">
+            <h1>Veggie tomato mix</h1>
+          </div>
+          <div class="status">
+            <div class="status-top">
+              <p class="price">IDR 34.000</p>
+            </div>
+            <div class="status-bottom">
+              <p class="txt">Delivered to Table 4</p>
+              <input type="checkbox" value="9">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"></div>
+        <div class="desc">
+          <div class="card-title">
+            <h1>Veggie tomato mix</h1>
+          </div>
+          <div class="status">
+            <div class="status-top">
+              <p class="price">IDR 34.000</p>
+            </div>
+            <div class="status-bottom">
+              <p class="txt">Delivered to Table 4</p>
+              <input type="checkbox" value="10">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"></div>
+        <div class="desc">
+          <div class="card-title">
+            <h1>Veggie tomato mix</h1>
+          </div>
+          <div class="status">
+            <div class="status-top">
+              <p class="price">IDR 34.000</p>
+            </div>
+            <div class="status-bottom">
+              <p class="txt">Delivered to Table 4</p>
+              <input type="checkbox" value="11">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"></div>
+        <div class="desc">
+          <div class="card-title">
+            <h1>Veggie tomato mix</h1>
+          </div>
+          <div class="status">
+            <div class="status-top">
+              <p class="price">IDR 34.000</p>
+            </div>
+            <div class="status-bottom">
+              <p class="txt">Delivered to Table 4</p>
+              <input type="checkbox" value="12">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"></div>
+        <div class="desc">
+          <div class="card-title">
+            <h1>Veggie tomato mix</h1>
+          </div>
+          <div class="status">
+            <div class="status-top">
+              <p class="price">IDR 34.000</p>
+            </div>
+            <div class="status-bottom">
+              <p class="txt">Delivered to Table 4</p>
+              <input type="checkbox" value="13">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"></div>
+        <div class="desc">
+          <div class="card-title">
+            <h1>Veggie tomato mix</h1>
+          </div>
+          <div class="status">
+            <div class="status-top">
+              <p class="price">IDR 34.000</p>
+            </div>
+            <div class="status-bottom">
+              <p class="txt">Delivered to Table 4</p>
+              <input type="checkbox" value="14">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="img"></div>
+        <div class="desc">
+          <div class="card-title">
+            <h1>Veggie tomato mix</h1>
+          </div>
+          <div class="status">
+            <div class="status-top">
+              <p class="price">IDR 34.000</p>
+            </div>
+            <div class="status-bottom">
+              <p class="txt">Delivered to Table 4</p>
+              <input type="checkbox" value="15">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Overlay dan modal -->
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="modal">
+      <p>Are you sure want to delete the <br> selected items?</p>
+      <div class="btn-group">
+        <button class="btnCancel" id="modalCancel">Cancel</button>
+        <button class="btnDelete" id="modalDelete">Delete</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-desc">
+      <div class="footer-icon">
+        <img src="../assets/icon-coffee.svg" alt="icon-coffee">
+        <h2 class="title">Coffee Shop</h2>
+      </div>
+      <p class="desc">Coffee Shop is a store that sells some good <br /> meals, and especially coffee. We provide
+        <br /> high quality beans</p>
+      <div class="social-media">
+        <ul>
+          <li><a href="#" class="fa fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-twitter"></a></li>
+          <li><a href="#" class="fa fa-instagram"></a></li>
+        </ul>
+      </div>
+      <div class="copyright">&copy;2020CoffeeStore</div>
+    </div>
+    <div class="footer-menu">
+      <div class="product">
+        <h2>Product</h2>
+        <ul class="product-list">
+          <li>Download</li>
+          <li>Pricing</li>
+          <li>Locations</li>
+          <li>Countries</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+      <div class="engage">
+        <h2>Engage</h2>
+        <ul class="engage-list">
+          <li>Coffe Shop ?</li>
+          <li>FAQ</li>
+          <li>About Us</li>
+          <li>Privacy Policy</li>
+          <li>Terms of Service</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
+</html>

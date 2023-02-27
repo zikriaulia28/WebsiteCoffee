@@ -120,6 +120,104 @@ a {
   border: none;
 }
 
+.input-form span {
+  width: 10%;
+  font-size: 12px;
+  position: absolute;
+  transform: translate(-150px, 20px);
+  color: #CF0A0A;
+}
+
+form span {
+  font-size: 12px;
+  color: #CF0A0A;
+}
+
+/* modal */
+/* overlay and modal */
+
+.overlay {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal {
+  text-align: center;
+  width: 450px;
+  height: 200px;
+  position: fixed;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  display: none;
+}
+
+.modal h3 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.modal p {
+  font-size: 18px;
+}
+
+/* Gaya untuk tombol-tombol */
+.modal button {
+  width: 100px;
+  height: 50px;
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 69px;
+}
+
+.modal .btnOke {
+  background-color: var(--background-secondary);
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+.modal .btnOke:hover {
+  background-color: var(--color-secondary);
+  color: var(--background-secondary);
+}
+
+/* overlay and modal */
+
+.circle-check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid green;
+  position: absolute;
+  display: none;
+  transform: translate(474px, -48px);
+}
+
+.circle-check::before {
+  content: "\2713";
+  font-size: 15px;
+  font-weight: 700;
+  color: green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .input-form .forgot a {
   color: var(--color-secondary);
 }
@@ -187,7 +285,7 @@ a {
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 176px 100px;
+  padding: 176px 100px 10px;
   background-color: var(--background-primary);
 }
 
@@ -286,8 +384,7 @@ footer {
 
   .signup {
     position: absolute;
-    z-index: 1;
-    background-color: #00000038;
+    background-color: #00000096;
     padding: 10px 40px;
   }
 
@@ -331,6 +428,8 @@ footer {
 @media (max-width: 428px) {
   .signup {
     width: 100%;
+    height: 122%;
+    padding: 20px;
   }
 
   .header-signup {
@@ -364,51 +463,77 @@ footer {
   }
 
   .btn {
-    width: 80%;
-    height: 35px;
+    width: 70%;
+    height: 40px;
   }
 
   .card-member {
     padding: 8px 10px;
     width: 80%;
     transform: translate(-18%, -55%);
-    flex-direction: column;
     height: fit-content;
     gap: 10px;
+    z-index: 1;
   }
 
   .card-title {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .card-member .btn-create {
+    font-size: 12px;
+    width: 20%;
+  }
+
+  .input-form span {
+    transform: translate(-158px, 15px);
+    width: 40%;
+  }
+
+  .circle-check {
+    transform: translate(246px, -36px);
+  }
+
+  .modal {
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+  }
+
+  .modal h3 {
+    font-size: 20px;
+  }
+
+  .modal p {
     font-size: 14px;
-    width: 30%;
-    height: 30px;
   }
 
   footer {
-    padding: 60px 40px;
-    flex-direction: column-reverse;
-  }
-
-  .footer-desc .footer-icon,
-  .footer-desc .desc {
-    position: relative;
-    transform: translateY(-155px);
+    padding: 60px 20px;
+    flex-direction: column;
   }
 
   .footer-menu {
-    transform: translateY(175px);
-  }
-
-  .footer-menu .product h2,
-  .footer-menu .engage h2 {
-    font-size: 16px;
+    justify-content: flex-end;
+    gap: 20%;
   }
 
   .social-media,
   .footer-desc .copyright {
-    transform: translateY(30px);
+    position: absolute;
+    transform: translateY(21rem);
+  }
+
+  .footer-desc .copyright {
+    transform: translateY(21rem);
+  }
+
+  .social-media {
+    transform: translateY(10rem);
+  }
+
+  .social-media ul {
+    flex-direction: column;
   }
 }

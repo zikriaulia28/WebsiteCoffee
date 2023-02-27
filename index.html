@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Week 1 - make website coffee shope ">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="shortcut icon" href="./assets/icon-coffee.svg" type="image/x-icon">
   <title>Coffee Shop - Home</title>
 </head>
@@ -19,20 +19,20 @@
         <h1 class="logo-title">Coffee Shop</h1>
       </div>
       <div class="menu-list pointer">
-        <ul>
+        <ul id="menu-list">
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="./Product/index.html">Product</a></li>
+          <li><a href="./Product/product.html">Product</a></li>
           <li>Your Cart</li>
-          <li>History</li>
+          <li><a href="./historyCust/history.html">History</a></li>
         </ul>
       </div>
       <div class="login">
-        <ul>
-          <li><a href="./Login/index.html">Login</a></li>
-          <li><a class="signup" href="./SignUp/index.html">Sign Up</a></li>
+        <ul id="menu-login">
+          <li><a href="./Login/login.html">Login</a></li>
+          <li><a class="signup" href="./SignUp/signup.html">Sign Up</a></li>
         </ul>
       </div>
-      <img fetchpriority="low" src="./assets/menu-icon.svg" alt="menu-icon" class="menu">
+      <img fetchpriority="low" src="./assets/menu-icon.svg" alt="menu-icon" class="menu pointer" id="humberger">
     </nav>
   </header>
   <section class="container-home">
@@ -290,9 +290,9 @@
           </div>
         </div>
         <div class="card-desc">
-          <p>“Wow... I am very happy to spend my whole <br /> day here. the Wi-fi is good, and <br /> the coffee and
+          <p>“Wow... I am very happy to spend my whole <br /> day here. the Wi-fi is good, and the coffee and <br />
             meals
-            tho. I like it here!! Very recommended!</p>
+            tho. I like it here!! Very recommended!"</p>
         </div>
       </div>
       <div class="card">
@@ -314,8 +314,9 @@
           </div>
         </div>
         <div class="card-desc">
-          <p>“I like it because I like to travel far and still can make my day better just by drinking their Hazelnut
-            Latte</p>
+          <p>“I like it because I like to travel far and still can <br>
+            make my day better just by drinking their <br>
+            Hazelnut Latte"</p>
         </div>
       </div>
       <div class="card">
@@ -337,8 +338,9 @@
           </div>
         </div>
         <div class="card-desc">
-          <p>“This is very unusual for my taste, I haven’t liked coffee before but their coffee is the best! and yup,
-            you have to order the chicken wings, the best in town!</p>
+          <p>“This is very unusual for my taste, I haven’t <br> liked coffee before but their coffee is the <br> best!
+            and yup,
+            you have to order the chicken <br> wings, the best in town!</p>
         </div>
       </div>
     </div>
@@ -360,6 +362,15 @@
             <img fetchpriority="low" src="./assets/arrow.svg" alt="arrow">
           </div>
         </div>
+      </div>
+    </div>
+    <div class="card-promo">
+      <div class="promoLeft">
+        <h2 class="titlePromo">Check our promo <br> today!</h2>
+        <p class="descPromo">Let's see the deals and pick yours!</p>
+      </div>
+      <div class="promoRight">
+        <button class="seePromo">See Promo</button>
       </div>
     </div>
   </section>
@@ -403,7 +414,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
